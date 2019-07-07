@@ -1,0 +1,20 @@
+.navigation-toggle {
+    position: absolute;
+    z-index: 999;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.course {
+    height: calc(100% - 113px);
+    width: 100%;
+
+    &__sidebar {
+        width: 350px;
+        padding: 1rem;
+    }
+
+    &__content {
+        padding: 1rem;
+    }
+}

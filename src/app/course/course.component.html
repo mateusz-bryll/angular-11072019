@@ -1,0 +1,13 @@
+<mat-sidenav-container class="course" #sidenavMenu>
+    <mat-sidenav mode="push" class="course__sidebar" #sidenav>
+        <router-outlet name="sidebar"></router-outlet>
+    </mat-sidenav>
+    <mat-sidenav-content class="course__content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<button mat-fab color="primary" class="navigation-toggle"
+    (click)="sidenav.opened ? sidenavMenu.close() : sidenavMenu.open()">
+    <mat-icon>menu</mat-icon>
+</button>
